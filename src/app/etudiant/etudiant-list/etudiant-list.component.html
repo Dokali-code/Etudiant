@@ -1,0 +1,14 @@
+<app-etudiant-add></app-etudiant-add>
+  <mat-accordion style="width:3rem; margin-top:1rem; margin-left:2rem;">
+    <mat-expansion-panel *ngFor="let e of etudiants">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Etudiant {{e.prenom}}
+        </mat-panel-title>
+        
+      </mat-expansion-panel-header>
+  
+      <p>Détails Etudiant</p>
+  
+    </mat-expansion-panel>
+  </mat-accordion>
