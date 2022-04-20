@@ -15,6 +15,7 @@ import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatCardModule} from '@angular/material/card'
 import {MatExpansionModule} from '@angular/material/expansion';
 import { AproposComponent } from './etudiant/apropos/apropos.component';
+import { EtudiantDetailsComponent } from './etudiant-details/etudiant-details.component';
 
 
 
@@ -26,6 +27,7 @@ import { AproposComponent } from './etudiant/apropos/apropos.component';
     EtudiantAddComponent,
     EtudiantListComponent,
     AproposComponent,
+    EtudiantDetailsComponent,
     
     
   ],

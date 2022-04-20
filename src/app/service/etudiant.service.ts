@@ -4,6 +4,7 @@ import { Etudiant } from '../model/etudiant.model';
 @Injectable({providedIn: 'root'})
 export class EtudiantService {
   
+  
     etudiants=[
       new Etudiant('Salah'),
       new Etudiant('Ahmed'),
@@ -12,5 +13,7 @@ export class EtudiantService {
     ]
     
   constructor() { }
-  
+  addEtudiant (e:Etudiant){
+    this.etudiants.push(e);
+  }
 }

@@ -5,10 +5,12 @@
         <mat-panel-title>
           Etudiant {{e.prenom}}
         </mat-panel-title>
-        
       </mat-expansion-panel-header>
-  
       <p>Détails Etudiant</p>
-  
+      <mat-card-actions align="end">
+        <button mat-raised-button color="primary">Edit</button>
+      <button mat-raised-button color="warn">Delete</button>
+        <button mat-raised-button color="accent" [routerLink]="['/etudiantDetails',e.prenom]">Details</button>
+      </mat-card-actions>
     </mat-expansion-panel>
   </mat-accordion>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Etudiant } from 'src/app/model/etudiant.model';
+import { EtudiantService } from 'src/app/service/etudiant.service';
 
 @Component({
   selector: 'app-etudiant-add',
@@ -7,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EtudiantAddComponent implements OnInit {
 
-  constructor() { }
+  constructor(private etudiantService : EtudiantService) { }
 
   ngOnInit(): void {
   }
   addEtudiant(e: HTMLInputElement){
-    alert(e.value);}
+    alert(e.value);
+    this.etudiantService.addEtudiant(new Etudiant(e.value));
+  }
 
 }
